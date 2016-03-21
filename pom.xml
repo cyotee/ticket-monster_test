@@ -24,7 +24,7 @@
 
         <host.ose.url>ticket-monster.cloudapps-27ef.oslab.opentlc.com</host.ose.url>
         <port.ose>80</port.ose>
-        <path.ose>ticket-monster/admin/app.html#/</path.ose>
+        <path.ose>ticket-monster/admin/app.html#/Bookings</path.ose>
 
         <host.docker.url>rhel-docker.vm</host.docker.url>
         <port.docker>8181</port.docker>
