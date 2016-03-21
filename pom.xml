@@ -26,7 +26,7 @@
 
         <host.ose.hosted.url>ticket-monster.cloudapps-27ef.oslab.opentlc.com</host.ose.hosted.url>
         <port.ose.hosted>80</port.ose.hosted>
-        <path.ose>/ticket-monster</path.ose>
+        <path.ose>ticket-monster</path.ose>
 
         <performancetest.webservice.host>localhost</performancetest.webservice.host>
         <performancetest.webservice.port>${jetty.port}</performancetest.webservice.port>
