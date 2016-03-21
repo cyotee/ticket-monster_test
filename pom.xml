@@ -4,38 +4,37 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>co.osa</groupId>
-    <artifactId>ticket-monster</artifactId>
+    <artifactId>load_test_war</artifactId>
     <version>1.0</version>
+    <packaging>war</packaging>
     <name>Simple WAR for Load Testing</name>
     <description>
         A basic servlet that utilizes thread sleep to facilitate using load testing tools.
     </description>
 
     <properties>
+        <version.servlet>2.5</version.servlet>
+        <jetty.port>9097</jetty.port>
+        <port.tomcat>8080</port.tomcat>
+        <port.ose>80</port.ose>
+        <port.docker>8181</port.docker>
+        <jetty.stopPort>19097</jetty.stopPort>
+
+        <host.local.url>localhost</host.local.url>
+        <host.ose.url>ticket-monster.cloudapps-27ef.oslab.opentlc.com</host.ose.url>
+        <host.docker.url>rhel-docker.vm</host.docker.url>
+
         <host.ose.hosted.url>ticket-monster.cloudapps-27ef.oslab.opentlc.com</host.ose.hosted.url>
         <port.ose.hosted>80</port.ose.hosted>
         <path.ose>/ticket-monster</path.ose>
 
-        <version.servlet>2.5</version.servlet>
-        <!--
-        <jetty.port>9097</jetty.port>
-        <port.tomcat>8080</port.tomcat>
-        <port.docker>8181</port.docker>
-        <jetty.stopPort>19097</jetty.stopPort>-->
-
-        <!--<host.local.url>localhost</host.local.url>
-        <host.ose.url>ticket-monster.cloudapps-27ef.oslab.opentlc.com</host.ose.url>
-        <host.docker.url>rhel-docker.vm</host.docker.url>-->
-
-
-
-        <!--<performancetest.webservice.host>localhost</performancetest.webservice.host>
+        <performancetest.webservice.host>localhost</performancetest.webservice.host>
         <performancetest.webservice.port>${jetty.port}</performancetest.webservice.port>
         <performancetest.webservice.path>/ticket-monster</performancetest.webservice.path>
         <performancetest.connectTimeout>1000</performancetest.connectTimeout>
         <performancetest.responseTimeout>3000</performancetest.responseTimeout>
         <performancetest.threadCount>20</performancetest.threadCount>
-        <performancetest.loopCount>10</performancetest.loopCount>-->
+        <performancetest.loopCount>10</performancetest.loopCount>
     </properties>
 
     <dependencies>
@@ -63,7 +62,7 @@
                 </plugins>
             </build>
         </profile>
-        <!--<profile>
+        <profile>
             <id>embedded-jetty</id>
             <properties>
                 <performancetest.webservice.host>${host.local.url}</performancetest.webservice.host>
@@ -149,7 +148,7 @@
                 <plugins>
                 </plugins>
             </build>
-        </profile>-->
+        </profile>
     </profiles>
 
     <build>
@@ -266,8 +265,8 @@
                 </executions>
             </plugin>
 
-            <!--<plugin>
-                &lt;!&ndash; To start an embedded jetty with a simple webapp for demonstration purposes &ndash;&gt;
+            <plugin>
+                <!-- To start an embedded jetty with a simple webapp for demonstration purposes -->
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>8.1.14.v20131031</version>
@@ -280,7 +279,7 @@
                     <stopPort>${jetty.stopPort}</stopPort>
                     <stopKey>STOP</stopKey>
                 </configuration>
-            </plugin>-->
+            </plugin>
 
             <plugin>
                 <groupId>de.codecentric</groupId>
