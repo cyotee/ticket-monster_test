@@ -4,9 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>co.osa</groupId>
-    <artifactId>load_test_war</artifactId>
+    <artifactId>ticket-monster</artifactId>
     <version>1.0</version>
-    <packaging>war</packaging>
     <name>Simple WAR for Load Testing</name>
     <description>
         A basic servlet that utilizes thread sleep to facilitate using load testing tools.
