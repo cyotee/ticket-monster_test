@@ -16,10 +16,11 @@
         <port.ose.hosted>80</port.ose.hosted>
         <path.ose>/ticket-monster</path.ose>
 
-        <!--<version.servlet>2.5</version.servlet>
+        <version.servlet>2.5</version.servlet>
+        <!--
         <jetty.port>9097</jetty.port>
-        <port.tomcat>8080</port.tomcat>-->
-        <!--<port.docker>8181</port.docker>
+        <port.tomcat>8080</port.tomcat>
+        <port.docker>8181</port.docker>
         <jetty.stopPort>19097</jetty.stopPort>-->
 
         <!--<host.local.url>localhost</host.local.url>
@@ -37,13 +38,13 @@
         <performancetest.loopCount>10</performancetest.loopCount>-->
     </properties>
 
-    <!--<dependencies>
+    <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
             <version>${version.servlet}</version>
         </dependency>
-    </dependencies>-->
+    </dependencies>
 
     <profiles>
         <profile>
