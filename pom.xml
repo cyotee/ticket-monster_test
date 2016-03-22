@@ -22,14 +22,14 @@
         <host.local.url>localhost</host.local.url>
         <jetty.port>9097</jetty.port>
 
-        <host.ose.url>ticket-monster.cloudapps-27ef.oslab.opentlc.com</host.ose.url>
+        <host.ose.url>ticket-monster.cloudapps-290d.oslab.opentlc.com</host.ose.url>
         <port.ose>80</port.ose>
         <path.ose>ticket-monster/rest/performances</path.ose>
 
         <host.docker.url>rhel-docker.vm</host.docker.url>
         <port.docker>8181</port.docker>
 
-        <host.ose.hosted.url>ticket-monster.cloudapps-27ef.oslab.opentlc.com</host.ose.hosted.url>
+        <host.ose.hosted.url>ticket-monster.cloudapps-290d.oslab.opentlc.com</host.ose.hosted.url>
         <port.ose.hosted>80</port.ose.hosted>
 
 
